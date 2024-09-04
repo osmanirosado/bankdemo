@@ -19,4 +19,6 @@ class UserController {
     fun getUsers (): ResponseEntity<List<User>> {
         return ResponseEntity(userService.getUsers(), HttpStatus.OK)
     }
+
+
 }
