@@ -12,7 +12,7 @@ services:
     build:
       context: .
     environment:
-      - DB_URL=postgresql://db:5432/bank
+      - JDBC_DB_URL=jdbc:postgresql://db:5432/bank
       - DB_USER=postgres
       - DB_PASSWORD=secret
     ports:
