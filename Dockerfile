@@ -73,4 +73,4 @@ COPY --from=extract builder/build/libs/extracted/application/ ./
 
 EXPOSE 8080
 
-CMD [ "java", "-Dspring.profiles.active=docker", "org.springframework.boot.loader.launch.JarLauncher", "--debug" ]
+CMD [ "java", "-Dspring.profiles.active=docker", "org.springframework.boot.loader.launch.JarLauncher" ]
